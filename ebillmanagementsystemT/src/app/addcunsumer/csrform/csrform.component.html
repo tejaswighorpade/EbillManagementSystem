@@ -1,0 +1,146 @@
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+          <div class="area"></div><nav class="main-menu">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/logo.png" alt="XYZ Company" class="img-responsive">
+                </a>
+            </div>
+    
+          <a class="nav-link active" aria-current="page" href="#"><h2>   
+            Web Self Service&nbsp;</h2></a>     
+                <ul>
+                    <li>
+                        <a href=" ">
+                            <i class="fa fa-home fa-2x"></i>
+                            <span class="nav-text">
+                               Home
+                            </span>
+                        </a>
+                      
+                    </li>
+                    <!-- <li class="has-subnav">
+                        <a href="#">
+                            <i class="fa fa-globe fa-2x"></i>
+                            <span class="nav-text">
+                                View & Pay Bill
+                            </span>
+                        </a>
+                        
+                    </li>
+                    <li class="has-subnav">
+                        <a href="#">
+                           <i class="fa fa-comments fa-2x"></i>
+                            <span class="nav-text">
+                                Customer Service
+                            </span>
+                        </a>
+                        
+                    </li> -->
+                  
+                    <li>
+                        <a href="csrlist">
+                            <i class="fa fa-film fa-2x"></i>
+                            <span class="nav-text">
+                                Vill Bill
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-book fa-2x"></i>
+                            <span class="nav-text">
+                               Genrate Bill
+                            </span>
+                        </a>
+                    </li>
+                    <!-- <li>
+                       <a href="#">
+                           <i class="fa fa-cogs fa-2x"></i>
+                            <span class="nav-text">
+                                Tools & Resources
+                            </span>
+                        </a>
+                    </li> -->
+                    <li>
+                       <a href="#">
+                            <i class="fa fa-map-marker fa-2x"></i>
+                            <span class="nav-text">
+                                Location in Map
+                            </span>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">
+                           <i class="fa fa-info fa-2x"></i>
+                            <span class="nav-text">
+                                Documentation
+                            </span>
+                        </a>
+                    </li> -->
+                </ul>
+    
+                <ul class="logout">
+                    <li>
+                       <a href="#">
+                             <i class="fa fa-power-off fa-2x"></i>
+                            <span class="nav-text">
+                                Logout
+                            </span>
+                        </a>
+                    </li>  
+                </ul>
+            </nav>
+            <form #spForm="ngForm" (ngSubmit)="onSubmit()">
+              <div *ngIf="cunsumer.cunsumer_id==0"><h1>Add Cunsumer</h1></div>
+              <div *ngIf="cunsumer.cunsumer_id>0"><h1>Update Cunsumer</h1></div>
+                
+
+                 <div class="form-group row">
+                    
+                    <label class ="col-sm-2 col-form-label"> Name</label>
+                    <div class ="col-sm-10">
+                        <input type ="text" name="consumer_name"[(ngModel)]="cunsumer.consumer_name" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class ="col-sm-2 col-form-label"> bill_amt</label>
+                      <div class ="col-sm-10">
+                          <input type ="text" name="bill_amt"  [(ngModel)]="cunsumer.bill_amt"/>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                    <label class ="col-sm-2 col-form-label">unit</label>
+                    <div class ="col-sm-10">
+                        <input type ="text" name="unit"  [(ngModel)]="cunsumer.unit"/>
+                    </div>
+  
+                  </div>
+                  <div class="form-group row">
+                      <label class ="col-sm-2 col-form-label"> connection_type</label>
+                      <div class ="col-sm-10">
+                          <input type ="text" name="connection_type" [(ngModel)]="cunsumer.connection_type" />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class ="col-sm-2 col-form-label"> address</label>
+                      <div class ="col-sm-10">
+                          <input type ="text" name="ad"  [(ngModel)]="cunsumer.address"/>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class ="col-sm-2 col-form-label"> admin_id</label>
+                      <div class ="col-sm-10">
+                          <input type ="text" name="admin_id" [(ngModel)]="cunsumer.admin_id" />
+                      </div>
+                    </div>
+                   
+                    <div class="form-group row">
+                      <div class="col-sm-2"><button type ="submit"class="btn btn-info">Submit</button></div>
+                      <div class="col-sm-2"><button type="reset" class="btn btn-info">Reset</button></div>
+                    </div>
+                </form>
+</div>
+</div>
+</div>

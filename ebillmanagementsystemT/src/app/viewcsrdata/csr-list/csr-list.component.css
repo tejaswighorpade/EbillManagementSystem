@@ -1,0 +1,24 @@
+.container-fluid{
+    padding-left: 260px;
+    background-color: rgb(145, 230, 95);
+    
+}
+th{
+    padding-left: 40px;
+}
+td{
+    padding-left: 10px;
+}
+.tableheading{
+    background-color: aqua;
+    text-align: center;
+    font-size: medium;
+}
+table{
+    border-color: rgb(201, 33, 33);
+    border-radius: 5px;
+}
+.main-content{
+    border-radius: 10px;
+    border-color: brown;
+}

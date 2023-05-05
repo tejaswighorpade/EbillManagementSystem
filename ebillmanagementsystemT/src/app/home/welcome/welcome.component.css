@@ -1,0 +1,28 @@
+.main-content{
+    padding-left: 250px;
+    margin-left: 290px;
+    margin-top: 259px;
+}
+.welcomearea{
+    padding-left: 25px;
+    font-size: medium;
+
+}
+.logo
+{
+    width:"10px" ;
+    height:"10px";
+}
+
+  
+.top-left {
+    position: absolute;
+    top: 2px;
+    left: 16px;
+    text-size:25px;
+  }
+  .welcome{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }

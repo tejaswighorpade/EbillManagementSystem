@@ -1,0 +1,139 @@
+<p>csr-list works!</p>
+
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <div class="area"></div><nav class="main-menu">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo.png" alt="XYZ Company" class="img-responsive">
+                    </a>
+                </div>
+        
+              <a class="nav-link active" aria-current="page" href="#"><h2>   
+                Web Self Service&nbsp;</h2></a>     
+                    <ul>
+                        <li>
+                            <a href=" ">
+                                <i class="fa fa-home fa-2x"></i>
+                                <span class="nav-text">
+                                   Home
+                                </span>
+                            </a>
+                          
+                        </li>
+                        <!-- <li class="has-subnav">
+                            <a href="#">
+                                <i class="fa fa-globe fa-2x"></i>
+                                <span class="nav-text">
+                                    View & Pay Bill
+                                </span>
+                            </a>
+                            
+                        </li>
+                        <li class="has-subnav">
+                            <a href="#">
+                               <i class="fa fa-comments fa-2x"></i>
+                                <span class="nav-text">
+                                    Customer Service
+                                </span>
+                            </a>
+                            
+                        </li> -->
+                      
+                        <li>
+                            <a href="csrlist">
+                                <i class="fa fa-film fa-2x"></i>
+                                <span class="nav-text">
+                                    View Bill
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-book fa-2x"></i>
+                                <span class="nav-text">
+                                   Genrate Bill
+                                </span>
+                            </a>
+                        </li>
+                        <!-- <li>
+                           <a href="#">
+                               <i class="fa fa-cogs fa-2x"></i>
+                                <span class="nav-text">
+                                    Tools & Resources
+                                </span>
+                            </a>
+                        </li> -->
+                        <li>
+                           <a href="#">
+                                <i class="fa fa-map-marker fa-2x"></i>
+                                <span class="nav-text">
+                                    Location in Map
+                                </span>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">
+                               <i class="fa fa-info fa-2x"></i>
+                                <span class="nav-text">
+                                    Documentation
+                                </span>
+                            </a>
+                        </li>
+                    </ul> -->
+                    </ul>
+                    <ul class="logout">
+                        <li>
+                           <a href="#">
+                                 <i class="fa fa-power-off fa-2x"></i>
+                                <span class="nav-text">
+                                    Logout
+                                </span>
+                            </a>
+                        </li>  
+                    </ul>
+                </nav>
+            <div class="tableheading"><p>Consumer Table</p></div>
+            <div class="row">
+              <table class='table'>
+                <thead>
+                    <tr class='table-dark'>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Bill-amt</th>
+                        <th>Unit</th>
+                        <th>Consumer_Id</th>
+                        <th>Connection_Type</th>
+                    </tr>
+                </thead>
+                <tr >
+                    <td>Prashant</td>
+                    <td>Phaltan</td>
+                    <td>$2500.00</td>
+                    <td>55</td>
+                    <td>10</td>
+                    <td>Residencial</td>
+                </tr>
+                <tr *ngFor="let tempCsr of cunsumer">
+                    <td>{{tempCsr.consumer_name}}</td>
+                    <td>{{tempCsr.address}}</td>
+                    <td>{{tempCsr.bill_amt}}</td>
+                    <td>{{tempCsr.unit}}</td>
+                    <td>{{tempCsr.cunsumer_id}}</td>
+                    <td>{{tempCsr.connection_type}}</td>
+                    <button type="button" class="btn btn-md btn-success" (click)="updateCsr(tempCsr.cunsumer_id)">Update</button>&nbsp;&nbsp;
+                    <button type="button" class="btn btn-md btn-danger" (click) = "deleteCsr(tempCsr.cunsumer_id)">Delete </button>
+                    </tr>
+                    <button class="atu-btn-submit btn btn-info" (click) = "addCsr()" >Add Employee</button>
+            </table>
+            </div>
+            
+        </div>
+      
+    </div>
+</div>
+
+ 
+
+
